@@ -1,0 +1,72 @@
+AKIA547NH63LMKFEOCJH
+J7Dq4GviCcdfl1PXfyaU6Wxh2QACLI9TyL/J52ZE
+
+parse sa file
+check kung pila kabook ang entries
+check ang latest closing
+-store ang value
+-compare sa previous na close
+--if mas dako ang latest proceed to next until na mas dako ang previous sa current
+-store an latest value
+--print kung pila ka steps
+--pila ka percent ang increase
+s
+naa tig extract
+naa tig compare
+
+
+class Analysis():
+
+class LookBack():
+if current closing(start_value = x) is higher than the previous closing(y), proceed sa next steps. y will be x then new y will update to new previous, the update ang step_counter. Else kung equal or less ang x sa y, print pila ang step_counter then pila ang difference sa start_value ug ang y. then reset. update na ang start_value ug x. balik sa loop until mahurot ang entry sa json.  
+
+	def __init__():
+	
+	def compare_previous():
+		if less current >= previous continue:
+	
+class DataExtract():
+depende sa argument.
+entry naa pang extract per company ID. then until unsa ang range.
+range lang sa ang dawaton
+ang base na url(https://pselookup.vrymel.com/api)
+then puno nlang depende sa entry: /stocks/{ticker_symbol}/history/{start_date}/{end_date}
+	def __init__(self,mode,symbol,start,end_date):
+	def extract():
+		if mode="client":
+			extract tanan clients:
+			https://pselookup.vrymel.com/api
+			parse data, isulod sa list ang tanan client.
+			return value
+		if mode="range":
+			generate url
+			extract data.
+			sulod sa file ang json output
+			check if naa content ang file, else error.
+			return and filename
+
+			
+def accept_arg():
+parse sa arg
+--s; -symbol: dapat naa sa sulod sa list sa valid symbol else display ang available na option 
+--d; -date  start date
+--e; -end_date end date
+tawag sa parser with the correct args and mode
+base sa result sa parser tawag ang lookback gamit ang filename
+	
+	
+def main()
+-gamit ang DataExtract kuhaon ang clients.
+-then ang result ipasa sa accept
+
+
+
+https://www.notion.so/PSE-Lookup-API-a68e29bbb9814635a92cef8519d1e0df
+
+
+
+
+
+
+
+		
