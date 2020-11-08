@@ -1,0 +1,6 @@
+>>> import json
+>>> j=open("stock","r")
+>>> j1=json.load(j)
+>>> j2=json.dumps(j1)
+>>> j3=json.loads(j2)
+>>> print(j3)
