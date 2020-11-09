@@ -4,3 +4,12 @@
 >>> j2=json.dumps(j1)
 >>> j3=json.loads(j2)
 >>> print(j3)
+
+
+>>> for i in j1['stocks']:
+...   a.append(i['ticker_symbol'])
+...   print (a)
+...   b.append(i['company_name'])
+...   print (b)
+... df = pd.DataFrame({"company": b}, index = a)
+
