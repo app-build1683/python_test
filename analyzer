@@ -1,0 +1,27 @@
+class ni sa data han.ay master:
+tig extract ug arrage sa data
+-naa dre mukuha sa tanan ticker
+-naa pud dre ang mukuha one year worth na data
+-loop ni until mahuman tanan ticker
+tig kuha sa pivot point ug sa next 5 na data:
+-mao ni xa mu store sa json file
+-after mas store na tanan
+
+abalysis master:
+
+function mu extract sa current date
+naa na specify sa file
+labay sa sa tig extract
+hulat sa data parsing done
+intiate sa tig analyze
+print sa analysis result
+
+mudagan ni xa once a month
+
+
+
+
+
+
+
+
