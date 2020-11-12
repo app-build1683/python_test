@@ -1,0 +1,41 @@
+The general plan
+
+training phase.
+script will extract all ticker symbol.
+parse each symbol and get the data for 1 year duration for each ticker and store it in a json file
+it will go one symbol at a time.
+extract one year worth of data as json.
+parse the data in this format.
+index day_1 ..... day_n
+open   value
+close   "
+high    "
+low     "
+volume  " 
+
+once this is extracted it will go one row at a time, compare the clsoing starting from day 1 which is the latest day
+it will compare the closing of the the next day.
+if day2 is lowe it will compare d3 to d3 until value is higher. it will this higher value as the pivot point.
+from pivot point it will check values for the next 4 more days.
+it will extract the value of this 5 day value and get the data as a list like below
+d_n = [open, close, high, low, volume, %change, wick_ratio]
+d_n-5 = [ open, close ...]
+get all these information in 1 DataFrame
+this will be pattern 1
+
+it will start checking again from the pivot point
+if it can find another it will to the same process
+
+it will continue saving patterns.
+
+after all tickers are done. it will cluster the daraframes.
+determine the similarity of those which has the most cluster members.
+tank the top 5 cluster ans learn the patterns save it as models and put percentage
+
+application phase:
+every end of day the checking script will run.
+it will extract the 5 days per ticker.
+if it sees a similarity to the models, it will print its findings and send an email
+
+at the end of every month it will check the whole month data to check for new patterns and add them to clusters
+
